@@ -7,7 +7,24 @@ import java.util.Scanner;
  */
 public class Book04 {
     public int solution(int n, int k) {
-        return 0;
+        int result = 0;
+
+        while (true) {
+            int tmp = (n / k) * k;
+            result += (n - tmp);
+            n = tmp;
+
+            if (n < k) {
+                break;
+            }
+
+            result++;
+            n /= k;
+        }
+
+        result += (n - 1);
+
+        return result;
     }
 
     public static void main(String[] args) {
