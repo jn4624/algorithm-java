@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Book05 {
     /**
-     * 모험가 길드(p311)
+     * 01.모험가 길드(p311)
      * 같은 문제 3회 풀기
      */
 
