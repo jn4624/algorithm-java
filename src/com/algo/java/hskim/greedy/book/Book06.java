@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Book06 {
     /**
-     * 곱하기 혹은 더하기(p312)
+     * 02.곱하기 혹은 더하기(p312)
      * 같은 문제 3회 풀기
      */
 
