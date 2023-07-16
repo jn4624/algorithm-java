@@ -19,10 +19,15 @@ public class Book05 {
      * 1. 공포도 X 최소값
      * 2. 공포도 X 최소 2명 이상
      */
-    public static int solution01(int n, String str){
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int n = Integer.parseInt(br.readLine());
+        String fearRateStr = br.readLine();
+
         int result = 0;
 
-        String[] fearRateArr = str.split(" ");
+        String[] fearRateArr = fearRateStr.split(" ");
 
         //1. 모험가 N명 ASC 또는 DESC 정렬
         Arrays.stream(fearRateArr).sorted();
@@ -43,16 +48,8 @@ public class Book05 {
             }
         }
 
-        return result;
-    }
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int n = Integer.parseInt(br.readLine());
-        String fearRateStr = br.readLine();
-
         br.close();
-        bw.write(String.valueOf(solution01(n, fearRateStr)));
+        bw.write(String.valueOf(result));
         bw.flush();
         bw.close();
     }
