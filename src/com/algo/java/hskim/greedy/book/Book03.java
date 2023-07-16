@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 public class Book03 {
     /**
      * 숫자 카드 게임(p96)
+     * 1회차 : 2023-07-01
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

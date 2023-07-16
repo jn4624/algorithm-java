@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 public class Book04 {
     /**
      * 1이 될 때까지(p99)
+     * 1회차 : 2023-07-01
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

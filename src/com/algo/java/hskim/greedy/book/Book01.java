@@ -3,6 +3,7 @@ package com.algo.java.hskim.greedy.book;
 public class Book01 {
     /**
      * 거스름돈(p87)
+     * 1회차 : 2023-06-19
      */
     public static void main(String[] args) {
         int count = 0;

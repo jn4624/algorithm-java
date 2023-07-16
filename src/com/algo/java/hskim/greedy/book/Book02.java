@@ -11,6 +11,7 @@ import java.util.StringTokenizer;
 public class Book02 {
     /**
      * 큰 수의 법칙(p92)
+     * 1회차 : 2023-06-19
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
