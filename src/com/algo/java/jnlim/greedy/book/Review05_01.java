@@ -5,6 +5,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 모험가 길드 1회차 복습
+ */
 public class Review05_01 {
     private static int n;
     private static List<Integer> fearLevelList = new ArrayList<>();
