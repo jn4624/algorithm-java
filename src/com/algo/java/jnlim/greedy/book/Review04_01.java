@@ -10,7 +10,10 @@ public class Review04_01 {
     public static int k;
 
     public static void main(String[] args) {
-        init();
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+        k = scan.nextInt();
+        scan.close();
 
         int result = 0;
         while (true) {
@@ -27,12 +30,5 @@ public class Review04_01 {
         }
 
         System.out.println(result);
-    }
-
-    public static void init() {
-        Scanner scan = new Scanner(System.in);
-        n = scan.nextInt();
-        k = scan.nextInt();
-        scan.close();
     }
 }

@@ -13,7 +13,14 @@ public class Review05_01 {
     private static List<Integer> fearLevelList = new ArrayList<>();
 
     public static void main(String[] args) {
-        init();
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            fearLevelList.add(scan.nextInt());
+        }
+
+        scan.close();
 
         Collections.sort(fearLevelList);
 
@@ -31,16 +38,5 @@ public class Review05_01 {
         }
 
         System.out.println(groups);
-    }
-
-    public static void init() {
-        Scanner scan = new Scanner(System.in);
-        n = scan.nextInt();
-
-        for (int i = 0; i < n; i++) {
-            fearLevelList.add(scan.nextInt());
-        }
-
-        scan.close();
     }
 }

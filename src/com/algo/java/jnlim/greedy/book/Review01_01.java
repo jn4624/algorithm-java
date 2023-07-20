@@ -10,7 +10,9 @@ public class Review01_01 {
     private static int n;
 
     public static void main(String[] args) {
-        init();
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+        scan.close();
 
         int result = 0;
         for (int coin : coins) {
@@ -19,11 +21,5 @@ public class Review01_01 {
         }
 
         System.out.println(result);
-    }
-
-    public static void init() {
-        Scanner scan = new Scanner(System.in);
-        n = scan.nextInt();
-        scan.close();
     }
 }

@@ -13,20 +13,6 @@ public class Review02_01 {
     private static int[] numbers;
 
     public static void main(String[] args) {
-        init();
-
-        Arrays.sort(numbers);
-
-        int firstNumber = numbers[n - 1];
-        int secondNumber = numbers[n - 2];
-        int firstCount = ((m / (k + 1)) * k) + (m % (k + 1));
-        int secondCount = (m - firstCount);
-        int result = (firstNumber * firstCount) + (secondNumber * secondCount);
-
-        System.out.println(result);
-    }
-
-    public static void init() {
         Scanner scan = new Scanner(System.in);
 
         n = scan.nextInt(); // 배열의 크기 5
@@ -39,5 +25,15 @@ public class Review02_01 {
         }
 
         scan.close();
+
+        Arrays.sort(numbers);
+
+        int firstNumber = numbers[n - 1];
+        int secondNumber = numbers[n - 2];
+        int firstCount = ((m / (k + 1)) * k) + (m % (k + 1));
+        int secondCount = (m - firstCount);
+        int result = (firstNumber * firstCount) + (secondNumber * secondCount);
+
+        System.out.println(result);
     }
 }
