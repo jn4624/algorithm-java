@@ -5,12 +5,22 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * 모험가 길드 1회차 복습
+ */
 public class Review05_01 {
     private static int n;
     private static List<Integer> fearLevelList = new ArrayList<>();
 
     public static void main(String[] args) {
-        init();
+        Scanner scan = new Scanner(System.in);
+        n = scan.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            fearLevelList.add(scan.nextInt());
+        }
+
+        scan.close();
 
         Collections.sort(fearLevelList);
 
@@ -28,16 +38,5 @@ public class Review05_01 {
         }
 
         System.out.println(groups);
-    }
-
-    public static void init() {
-        Scanner scan = new Scanner(System.in);
-        n = scan.nextInt();
-
-        for (int i = 0; i < n; i++) {
-            fearLevelList.add(scan.nextInt());
-        }
-
-        scan.close();
     }
 }
