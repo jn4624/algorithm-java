@@ -2,6 +2,9 @@ package com.algo.java.jnlim.greedy.book;
 
 import java.util.*;
 
+/**
+ * 무지의 먹방 라이브 2회차 복습
+ */
 class EatTime implements Comparable<EatTime> {
     private int time;
     private int index;
