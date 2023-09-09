@@ -7,11 +7,6 @@ import java.util.Scanner;
  * 주유소
  */
 public class B13305 {
-    /**
-     * 4 - 도시의 갯수
-     * 2 3 1 - 도로의 길이
-     * 5 2 4 1 - 리터당 가격
-     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
