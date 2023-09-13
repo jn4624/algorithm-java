@@ -14,18 +14,18 @@ public class B02720 {
         int T = scan.nextInt();
         int[] changes = new int[T];
 
-        for (int i=0; i<T; i++) {
+        for (int i = 0; i < T; i++) {
             changes[i] = scan.nextInt();
         }
 
         scan.close();
 
         StringBuilder sb = new StringBuilder();
-        for (int i=0; i<T; i++) {
+        for (int i = 0; i < T; i++) {
             int tmp = changes[i];
 
-            for(int cent : cents) {
-                sb.append(tmp/cent).append(" ");
+            for (int cent : cents) {
+                sb.append(tmp / cent).append(" ");
                 tmp %= cent;
             }
 
