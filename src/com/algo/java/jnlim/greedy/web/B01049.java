@@ -22,7 +22,7 @@ public class B01049 {
         int[] packagePrices = new int[guitarStringBrandCount];
         int[] singlePrices = new int[guitarStringBrandCount];
 
-        for (int i=0; i<guitarStringBrandCount; i++) {
+        for (int i = 0; i < guitarStringBrandCount; i++) {
             st = new StringTokenizer(br.readLine());
             packagePrices[i] = Integer.parseInt(st.nextToken());
             singlePrices[i] = Integer.parseInt(st.nextToken());
@@ -38,7 +38,7 @@ public class B01049 {
         // 가장 저렴한 패키지 구매 VS 가장 싼 낱개 구매 VS (가장 싼 패키지 구매 + 낱개 구매)
         result = Math.min(((guitarStringBrokenCount / packageGuitarStringCount) + 1) * minPackagePrice
                 , guitarStringBrokenCount * minSinglePrice);
-        result = Math.min(result, ((guitarStringBrokenCount/packageGuitarStringCount) * minPackagePrice) + ((guitarStringBrokenCount%packageGuitarStringCount) * minSinglePrice));
+        result = Math.min(result, ((guitarStringBrokenCount / packageGuitarStringCount) * minPackagePrice) + ((guitarStringBrokenCount % packageGuitarStringCount) * minSinglePrice));
 
         System.out.println(result);
     }
