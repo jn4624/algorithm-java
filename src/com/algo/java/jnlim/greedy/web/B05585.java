@@ -11,6 +11,7 @@ public class B05585 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int money = 1000 - scan.nextInt();
+
         scan.close();
 
         int count = 0;
