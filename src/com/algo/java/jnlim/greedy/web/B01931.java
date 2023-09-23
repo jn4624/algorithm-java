@@ -28,8 +28,8 @@ public class B01931 {
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
-        List<Time> times = new ArrayList<>();
 
+        List<Time> times = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             times.add(new Time(scan.nextInt(), scan.nextInt()));
         }
