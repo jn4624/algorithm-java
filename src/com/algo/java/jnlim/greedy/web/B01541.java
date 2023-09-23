@@ -9,6 +9,7 @@ public class B01541 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.next();
+
         scan.close();
 
         int sum = Integer.MAX_VALUE;
