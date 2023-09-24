@@ -12,6 +12,7 @@ public class B02839 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int delivered = scan.nextInt();
+
         scan.close();
 
         int count = 0;

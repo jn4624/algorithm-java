@@ -14,7 +14,7 @@ public class B01789 {
         long sum = 0;
         long cnt = 0;
 
-        for (int i=1; i<=s; i++) {
+        for (int i = 1; i <= s; i++) {
             sum += i;
 
             if (sum > s)

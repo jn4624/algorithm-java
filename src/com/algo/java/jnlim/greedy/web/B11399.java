@@ -11,8 +11,8 @@ public class B11399 {
         Scanner scan = new Scanner(System.in);
 
         int n = scan.nextInt();
-        int[] p = new int[n];
 
+        int[] p = new int[n];
         for (int i = 0; i < n; i++) {
             p[i] = scan.nextInt();
         }
