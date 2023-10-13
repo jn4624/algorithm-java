@@ -15,10 +15,9 @@ public class B01417 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int N = Integer.parseInt(br.readLine());
-        Queue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
-
         int temp = Integer.parseInt(br.readLine());
 
+        Queue<Integer> queue = new PriorityQueue<>(Comparator.reverseOrder());
         for (int i = 1; i < N; i++) {
             queue.add(Integer.parseInt(br.readLine()));
         }
