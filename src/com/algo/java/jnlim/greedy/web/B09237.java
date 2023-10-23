@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * 이장님 초대
  */
-public class B9237 {
+public class B09237 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
